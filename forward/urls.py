@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^$',views.index,name='index'),
     url(r'^special/',views.special,name='special'),
     url(r'^hello_world/',include('hello_world.urls')),
+    url(r'^book/',include('book.urls')),
     url(r'^logout/$',views.user_logout, name='logout')
 ]
 
